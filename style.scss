@@ -1,0 +1,53 @@
+@import 'variables';
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+
+body {
+  font: 100% $font-stack;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  width: 100%;
+  align-items: right;
+  position: absolute;
+
+
+  .navbar-ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+
+  }
+
+  .navbar-item {
+    padding: 1rem;
+    color: white;
+  }
+}
+
+// Banner //
+
+.banner {
+    width: 100vw;
+    height: 100vh;
+    background: #03001e; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #03001e, #7303c0, #ec38bc, #fdeff9); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #03001e, #7303c0, #ec38bc, #fdeff9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transition: 0.5s;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner:hover {
+  background-position: right center; /* change the direction of the change here */
+}
+
+.banner-text {
+  max-width: 50%;
+  font-size: $font-size;
+}
