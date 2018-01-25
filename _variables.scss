@@ -1,13 +1,10 @@
-$font-stack: 'Work Sans', sans-serif;
-$font-size: 18px;
+$rubik-sans: 'Rubik Sans', sans-serif;
+$roboto: 'Roboto', sans-serif;
 
-$gradient-color: linear-gradient(296deg, #c0257f, #e09b31, #a2e369);
-$gradient-background-size: 600% 600%;
+$txt-primary: #03001e;
+$txt-header: #7303c0;
 
-
-
-@mixin gradient-background {
-  -webkit-animation: AnimationName 38s ease infinite;
-  -moz-animation: AnimationName 38s ease infinite;
-  animation: AnimationName 38s ease infinite;
-}
+$purple-background: #7303c0;
+$regular: 400;
+$medium: 500;
+$bold: 700;

@@ -1,10 +1,38 @@
-@import 'variables';
-@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+@import "variables";
+@import "mixins";
+@import url("https://fonts.googleapis.com/css?family=Work+Sans");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 
 body {
-  font: 100% $font-stack;
+  font-family: $rubik-sans;
+  font-weight: $regular;
+  color: $txt-primary;
+  text-align: center;
   margin: 0;
   padding: 0;
+  line-height: 1.3rem;
+  font-size: 0.7rem;
+  display: inline-block;
+}
+
+h2 {
+  @include h2;
+}
+
+h3 {
+  @include h3;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .navbar {
@@ -12,42 +40,86 @@ body {
   align-items: right;
   position: absolute;
 
-
   .navbar-ul {
     list-style: none;
     display: flex;
     justify-content: flex-end;
-
   }
 
   .navbar-item {
-    padding: 1rem;
+    padding: 1.1rem;
     color: white;
+    &:hover {
+      @include hover;
+    }
   }
 }
 
 // Banner //
 
 .banner {
-    width: 100vw;
-    height: 100vh;
-    background: #03001e; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #03001e, #7303c0, #ec38bc, #fdeff9); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #03001e, #7303c0, #ec38bc, #fdeff9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    transition: 0.5s;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: -webkit-linear-gradient(
+    to left,
+    #03001e,
+    #7303c0,
+    #ec38bc,
+    #fdeff9
+  );
+  background: linear-gradient(to left, #03001e, #7303c0, #ec38bc, #fdeff9);
+  background-size: 200% auto;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-position 1.7s;
 }
 
 .banner:hover {
   background-position: right center; /* change the direction of the change here */
 }
 
-.banner-text {
-  max-width: 50%;
-  font-size: $font-size;
+.banner-animation {
+  animation-duration: 1.2s;
+  animation-name: bounceInUp;
+  color: white;
+}
+
+.banner-animation-delay {
+  @extend .banner-animation;
+  transition-delay: 2s;
+}
+
+@keyframes bounceInUp {
+  @include bounceInUp;
+}
+
+.about {
+  padding: 2rem;
+}
+
+.skills__table {
+  margin: auto;
+}
+
+table {
+  width: 75%;
+  border-spacing: 0;
+}
+
+th,
+td {
+  padding: 0.8rem;
+  text-align: center;
+}
+
+/* projects */
+
+.projects__homesafe {
+  color: #ec38bc;
+}
+
+.projects__homesafe__image {
+  width: 15rem;
 }
