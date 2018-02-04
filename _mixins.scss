@@ -40,7 +40,8 @@
 
 @mixin hover {
   font-weight: $medium;
-  border-bottom: 0.2em solid white;
+  text-decoration: line-through;
+  cursor: auto;
 }
 
 @mixin h2 {
