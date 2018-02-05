@@ -13,9 +13,9 @@
 
   <nav class="navbar" id="navbar">
     <ul class="navbar-ul" id="navbar-ul">
-        <li class="navbar-item" label for="about"><a href="#about">about</a></li>
-        <li class="navbar-item" label for="skills"><a href="#skills">skills</a></li>
+      <li class="navbar-item" label for="about"><a href="#about">about</a></li>
         <li class="navbar-item" label for="projects"><a href="#projects">projects</a></li>
+        <li class="navbar-item" label for="skills"><a href="#skills">skills</a></li>
         <li class="navbar-item" label for="contact"><a href="#contact">contact</a></li>
     </ul>
   </nav>
@@ -23,30 +23,40 @@
   <section class="banner">
       <div class="banner-text">
         <h2 class="banner-animation">Hello, I'm Sophie</h2>
+        <p class="banner-animation-text">A Creative Front End Developer</p>
     </div>
   </section>
 
   <section id="about" class="about">
       <h3 class="about__heading">ABOUT</h3>
-          <p class="about__text">I'm a creative developer living in London and I love nothing more than
-            solving people's problems with tech.
+          <p class="about__text">I'm a developer living in East London and I love
+            solving people's problems with technology.
             My coding journey began while studying English Literature and Publishing
             at University where I started playing around with HTML and CSS on WordPress. Following
             graduation, I dodged winter for two years travelling through Australia, Asia and India. This experience
             broadened my cultural awareness and allowed me to realise what it is I really want
             to do - build apps that make people happy.
           </p>
-
+          <section class="social" id="social">
+            <a href="https://github.com/sophielevens" class="social_links"><i class="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/sophie-levens/" class="social_links"><i class="fa fa-linkedin"></i></a>
+            <a href="https://twitter.com/sophie_levens" class="social_links"><i class="fa fa-twitter"></i></a>
+          </section>
   </section>
 
+  <section id="projects" class="main__Div projects displayNone">
+    <h3 class="projects">PROJECTS</h3>
+      <a class="projects__homesafe" href="#https://homesafefac.herokuapp.com/"><h4>Home Safe</h4></a>
+        <p>An app that streamlines the process of scheduling school pickups</p>
+        <p>Node.js | Nodemailer | Express | Handlebars | PostgreSQL | Heroku</p>
+        <div class="projects__homesafe__images">
+          <img class="projects__homesafe__image"src="./assets/images/userSelect.png" alt="select user page">
+          <img class="projects__homesafe__image"src="./assets/images/login.png" alt="login page">
+          <img class="projects__homesafe__image"src="./assets/images/parentProfile.png" alt="parent profile page">
+        </div>
 
 
-
-            <section class="social" id="social">
-              <a href="https://github.com/sophielevens" class="fa fa-github" style="color: black"></a>
-              <a href="https://www.linkedin.com/in/sophie-levens/" class="fa fa-linkedin" style="color: black"></a>
-              <a href="https://twitter.com/sophie_levens" class="fa fa-twitter" style="color: black"></a>
-            </section>
+  </section>
 
 
 
@@ -104,15 +114,7 @@
     </table>
   </section>
 
-    <section id="projects" class="main__Div projects displayNone">
-      <h3 class="projects">PROJECTS</h3>
-        <a class="projects__homesafe" href="#https://homesafefac.herokuapp.com/"><h4>Home Safe</h4></a>
-          <p>An app that streamlines the process of scheduling school pickups</p>
-          <img class="projects__homesafe__image"src="./assets/images/userSelect.png" alt="select user page">
-          <img class="projects__homesafe__image"src="./assets/images/login.png" alt="login page">
-          <img class="projects__homesafe__image"src="./assets/images/parentProfile.png" alt="parent profile page">
 
-    </section>
 
     <section id="contact" class="contact">
       <form class="" action="index.html" method="post">

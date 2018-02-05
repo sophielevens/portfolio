@@ -3,12 +3,12 @@
 body {
   font-family: "Didact Gothic", sans-serif;
   font-weight: 400;
+  font-size: 1rem;
   color: #324B4D;
   text-align: center;
   margin: 0;
   padding: 0;
   line-height: 1.3rem;
-  font-size: 0.7rem;
   display: inline-block; }
 
 h2 {
@@ -18,11 +18,22 @@ h2 {
 h3 {
   color: #FEAC5E;
   font-size: 1rem;
-  font-weight: 500; }
+  font-weight: 400; }
+
+p {
+  font-weight: 400;
+  font-size: 0.8rem; }
 
 a {
   text-decoration: none;
   color: white; }
+
+.fa {
+  color: #005C73;
+  font-size: 2rem; }
+
+.fa:hover {
+  color: #4BC0C8; }
 
 ul, li {
   list-style-type: none;
@@ -46,7 +57,7 @@ ul, li {
     color: white; }
     .navbar .navbar-item:hover {
       font-weight: 500;
-      text-decoration: line-through;
+      text-decoration: underline;
       cursor: auto; }
 
 .banner {
@@ -71,13 +82,15 @@ ul, li {
   background-position: right center;
   /* change the direction of the change here */ }
 
-.banner-animation, .banner-animation-delay {
+.banner-animation {
   animation-duration: 1.2s;
   animation-name: bounceInUp;
   color: white; }
 
-.banner-animation-delay {
-  transition-delay: 2s; }
+.banner-animation-text {
+  animation-duration: 1.2s;
+  animation-name: bounceInUp;
+  color: white; }
 
 @keyframes bounceInUp {
   from,
@@ -88,7 +101,7 @@ ul, li {
     animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
   from {
     opacity: 0;
-    transform: translate3d(0, 3000px, 0); }
+    transform: translate3d(0, 800px, 0); }
   60% {
     opacity: 1;
     transform: translate3d(0, -20px, 0); }
@@ -100,17 +113,12 @@ ul, li {
     transform: translate3d(0, 0, 0); } }
 .about {
   padding: 2rem;
-  display: flex;
-  flex-direction: column; }
-
-.about__imageholder {
-  width: 30%; }
-
-.about__image {
-  width: 100%; }
+  display: inline-flex;
+  flex-direction: column;
+  width: 80%; }
 
 .social * {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   margin: 1rem; }
 
@@ -132,6 +140,6 @@ td {
   color: #FEAC5E; }
 
 .projects__homesafe__image {
-  width: 15rem; }
+  width: 12rem; }
 
 /*# sourceMappingURL=style.css.map */

@@ -6,12 +6,12 @@
 body {
   font-family: $didact-gothic;
   font-weight: $regular;
+  font-size: 1rem;
   color: $txt-primary;
   text-align: center;
   margin: 0;
   padding: 0;
   line-height: 1.3rem;
-  font-size: 0.7rem;
   display: inline-block;
 }
 
@@ -23,9 +23,21 @@ h3 {
   @include h3;
 }
 
+p {
+  @include p;
+}
+
 a {
   text-decoration: none;
   color: white;
+}
+
+.fa {
+  color: #005C73;
+  font-size: 2rem;
+}
+.fa:hover {
+  color: #4BC0C8;
 }
 
 ul, li {
@@ -34,6 +46,7 @@ ul, li {
       display: flex;
       justify-content: center;
       padding: 0.5rem;
+
 }
 
 .navbar {
@@ -92,12 +105,13 @@ ul, li {
 .banner-animation {
   animation-duration: 1.2s;
   animation-name: bounceInUp;
-  color:white;
+  color: white;
 }
 
-.banner-animation-delay {
-  @extend .banner-animation;
-  transition-delay: 2s;
+.banner-animation-text {
+  animation-duration: 1.2s;
+  animation-name: bounceInUp;
+  color: white;
 }
 
 @keyframes bounceInUp {
@@ -106,20 +120,14 @@ ul, li {
 
 .about {
   padding: 2rem;
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
+  width: 80%;
 }
 
-.about__imageholder {
-  width: 30%;
-}
-
-.about__image {
-  width: 100%;
-}
 
 .social * {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   margin: 1rem;
 }
@@ -147,5 +155,5 @@ td {
 }
 
 .projects__homesafe__image {
-  width: 15rem;
+  width: 12rem;
 }

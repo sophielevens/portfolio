@@ -17,7 +17,7 @@
 
   from {
     opacity: 0;
-    transform: translate3d(0, 3000px, 0);
+    transform: translate3d(0, 800px, 0);
   }
 
   60% {
@@ -40,7 +40,7 @@
 
 @mixin hover {
   font-weight: $medium;
-  text-decoration: line-through;
+  text-decoration: underline;
   cursor: auto;
 }
 
@@ -52,5 +52,10 @@
 @mixin h3 {
   color: $txt-header;
   font-size: 1rem;
-  font-weight: $medium;
+  font-weight: $regular;
+}
+
+@mixin p {
+  font-weight: $regular;
+  font-size: 0.8rem;
 }
