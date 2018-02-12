@@ -59,3 +59,8 @@
   font-weight: $regular;
   font-size: 0.8rem;
 }
+
+@mixin a {
+  text-decoration: none;
+  color: white;
+}

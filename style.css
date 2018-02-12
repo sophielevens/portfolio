@@ -3,8 +3,8 @@
 body {
   font-family: "Didact Gothic", sans-serif;
   font-weight: 400;
-  font-size: 1rem;
   color: #324B4D;
+  font-size: 0.8rem;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -126,9 +126,9 @@ ul, li {
   margin: auto; }
 
 table {
-  width: 75%;
   border-spacing: 0;
-  border: 0.1rem solid #4BC0C8; }
+  border: 0.1rem solid #4BC0C8;
+  margin: 2rem; }
 
 th,
 td {
@@ -139,7 +139,15 @@ td {
 .projects__homesafe {
   color: #FEAC5E; }
 
+.project__skills {
+  font-weight: 700; }
+
 .projects__homesafe__image {
   width: 12rem; }
+
+.contact {
+  padding: 2rem;
+  background-color: #4BC0C8;
+  margin-top: 2rem; }
 
 /*# sourceMappingURL=style.css.map */

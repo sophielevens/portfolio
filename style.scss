@@ -6,8 +6,8 @@
 body {
   font-family: $didact-gothic;
   font-weight: $regular;
-  font-size: 1rem;
   color: $txt-primary;
+  font-size: $regular-font;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -28,8 +28,7 @@ p {
 }
 
 a {
-  text-decoration: none;
-  color: white;
+  @include a;
 }
 
 .fa {
@@ -137,9 +136,9 @@ ul, li {
 }
 
 table {
-  width: 75%;
   border-spacing: 0;
   border: 0.1rem solid #4BC0C8;
+  margin: 2rem;
 }
 
 th,
@@ -154,6 +153,16 @@ td {
   color: #FEAC5E;
 }
 
+  .project__skills {
+    font-weight: 700;
+  }
+
 .projects__homesafe__image {
   width: 12rem;
+}
+
+.contact {
+  padding: 2rem;
+  background-color: #4BC0C8;
+  margin-top: 2rem;
 }
