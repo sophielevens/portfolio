@@ -29,13 +29,14 @@ a {
   color: white; }
 
 .fa {
-  color: #005C73;
+  color: #005c73;
   font-size: 2rem; }
 
 .fa:hover {
-  color: #4BC0C8; }
+  color: #4bc0c8; }
 
-ul, li {
+ul,
+li {
   list-style-type: none;
   padding-left: 0;
   display: flex;
@@ -63,8 +64,8 @@ ul, li {
 .banner {
   width: 100vw;
   height: 100vh;
-  background: -webkit-linear-gradient(to left, #FEAC5E, #C779D0, #4BC0C8);
-  background: linear-gradient(to left, #FEAC5E, #C779D0, #4BC0C8);
+  background: -webkit-linear-gradient(to left, #feac5e, #c779d0, #4bc0c8);
+  background: linear-gradient(to left, #feac5e, #c779d0, #4bc0c8);
   background-size: 200% auto;
   color: white;
   display: flex;
@@ -75,7 +76,7 @@ ul, li {
 .banner-text {
   text-align: center;
   border: 0.1rem solid;
-  border-color: linear-gradient(to left, #FEAC5E, #C779D0, #4BC0C8);
+  border-color: linear-gradient(to left, #feac5e, #c779d0, #4bc0c8);
   padding: 3rem; }
 
 .banner:hover {
@@ -125,9 +126,15 @@ ul, li {
 .skills__table {
   margin: auto; }
 
+.skills__cv {
+  background-color: #4bc0c8;
+  padding: 0.5rem;
+  display: inline-block;
+  margin: 1rem; }
+
 table {
   border-spacing: 0;
-  border: 0.1rem solid #4BC0C8;
+  border: 0.1rem solid #4bc0c8;
   margin: 2rem; }
 
 th,
@@ -137,7 +144,7 @@ td {
 
 /* projects */
 .projects__homesafe {
-  color: #FEAC5E; }
+  color: #feac5e; }
 
 .project__skills {
   font-weight: 700; }
@@ -147,7 +154,9 @@ td {
 
 .contact {
   padding: 2rem;
-  background-color: #4BC0C8;
+  background-color: #4bc0c8;
   margin-top: 2rem; }
+  .contact .googleForm__input {
+    border: none; }
 
 /*# sourceMappingURL=style.css.map */

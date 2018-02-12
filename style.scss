@@ -4,165 +4,169 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 
 body {
-  font-family: $didact-gothic;
-  font-weight: $regular;
-  color: $txt-primary;
-  font-size: $regular-font;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  line-height: 1.3rem;
-  display: inline-block;
+	font-family: $didact-gothic;
+	font-weight: $regular;
+	color: $txt-primary;
+	font-size: $regular-font;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	line-height: 1.3rem;
+	display: inline-block;
 }
 
 h2 {
-  @include h2;
+	@include h2;
 }
 
 h3 {
-  @include h3;
+	@include h3;
 }
 
 p {
-  @include p;
+	@include p;
 }
 
 a {
-  @include a;
+	@include a;
 }
 
 .fa {
-  color: #005C73;
-  font-size: 2rem;
+	color: #005c73;
+	font-size: 2rem;
 }
 .fa:hover {
-  color: #4BC0C8;
+	color: #4bc0c8;
 }
 
-ul, li {
-  list-style-type: none;
-      padding-left: 0;
-      display: flex;
-      justify-content: center;
-      padding: 0.5rem;
-
+ul,
+li {
+	list-style-type: none;
+	padding-left: 0;
+	display: flex;
+	justify-content: center;
+	padding: 0.5rem;
 }
 
 .navbar {
-  display: flex;
-  position: absolute;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+	display: flex;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
 
-  .navbar-ul {
-    list-style: none;
-    flex-direction: column;
-    justify-content: flex-end;
-  }
+	.navbar-ul {
+		list-style: none;
+		flex-direction: column;
+		justify-content: flex-end;
+	}
 
-  .navbar-item {
-    padding: 2rem;
-    color: white;
-    &:hover {
-      @include hover;
-    }
-  }
+	.navbar-item {
+		padding: 2rem;
+		color: white;
+		&:hover {
+			@include hover;
+		}
+	}
 }
 
 // Banner //
 
 .banner {
-  width: 100vw;
-  height: 100vh;
-  background: -webkit-linear-gradient(
-    to left,
-    #FEAC5E,
-    #C779D0,
-    #4BC0C8
-  );
-  background: linear-gradient(to left, #FEAC5E, #C779D0, #4BC0C8);
-  background-size: 200% auto;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-position 1.7s;
+	width: 100vw;
+	height: 100vh;
+	background: -webkit-linear-gradient(to left, #feac5e, #c779d0, #4bc0c8);
+	background: linear-gradient(to left, #feac5e, #c779d0, #4bc0c8);
+	background-size: 200% auto;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: background-position 1.7s;
 }
 
 .banner-text {
-  text-align: center;
-  border: 0.1rem solid;
-  border-color: linear-gradient(to left, #FEAC5E, #C779D0, #4BC0C8);
-  padding: 3rem;
+	text-align: center;
+	border: 0.1rem solid;
+	border-color: linear-gradient(to left, #feac5e, #c779d0, #4bc0c8);
+	padding: 3rem;
 }
 
 .banner:hover {
-  background-position: right center; /* change the direction of the change here */
+	background-position: right center; /* change the direction of the change here */
 }
 
 .banner-animation {
-  animation-duration: 1.2s;
-  animation-name: bounceInUp;
-  color: white;
+	animation-duration: 1.2s;
+	animation-name: bounceInUp;
+	color: white;
 }
 
 .banner-animation-text {
-  animation-duration: 1.2s;
-  animation-name: bounceInUp;
-  color: white;
+	animation-duration: 1.2s;
+	animation-name: bounceInUp;
+	color: white;
 }
 
 @keyframes bounceInUp {
-  @include bounceInUp;
+	@include bounceInUp;
 }
 
 .about {
-  padding: 2rem;
-  display: inline-flex;
-  flex-direction: column;
-  width: 80%;
+	padding: 2rem;
+	display: inline-flex;
+	flex-direction: column;
+	width: 80%;
 }
 
-
 .social * {
-  display: inline-flex;
-  justify-content: center;
-  margin: 1rem;
+	display: inline-flex;
+	justify-content: center;
+	margin: 1rem;
 }
 
 .skills__table {
-  margin: auto;
+	margin: auto;
+}
+
+.skills__cv {
+	background-color: #4bc0c8;
+	padding: 0.5rem;
+	display: inline-block;
+	margin: 1rem;
 }
 
 table {
-  border-spacing: 0;
-  border: 0.1rem solid #4BC0C8;
-  margin: 2rem;
+	border-spacing: 0;
+	border: 0.1rem solid #4bc0c8;
+	margin: 2rem;
 }
 
 th,
 td {
-  padding: 0.8rem;
-  text-align: center;
+	padding: 0.8rem;
+	text-align: center;
 }
 
 /* projects */
 
 .projects__homesafe {
-  color: #FEAC5E;
+	color: #feac5e;
 }
 
-  .project__skills {
-    font-weight: 700;
-  }
+.project__skills {
+	font-weight: 700;
+}
 
 .projects__homesafe__image {
-  width: 12rem;
+	width: 12rem;
 }
 
 .contact {
-  padding: 2rem;
-  background-color: #4BC0C8;
-  margin-top: 2rem;
+	padding: 2rem;
+	background-color: #4bc0c8;
+	margin-top: 2rem;
+	.googleForm__input {
+		border: none;
+	}
 }

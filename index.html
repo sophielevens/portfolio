@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Sophie Levens Portfolio</title>
@@ -30,11 +30,9 @@
   <section id="about" class="about">
       <h3 class="about__heading">ABOUT</h3>
           <p class="about__text">I'm a developer living in East London and I love
-            solving people's problems with technology.
-            My coding journey began while studying English Literature and Publishing
-            at University where I started playing around with HTML and CSS on WordPress. Following
-            graduation, I dodged winter for two years travelling through Australia, Asia and India. This experience
-            broadened my cultural awareness and allowed me to realise what it is I really want
+            solving problems with technology.
+            My coding journey began while I was at University, where I worked on WordPress sites using HTML and CSS. After graduation, I dodged winter for two years and went backpacking through Australia, Asia and India. These two years have
+            broadened my cultural awareness beyond anything I could have imagined and brought me to realise what it is I really want
             to do - build apps that make people happy.
           </p>
           <section class="social" id="social">
@@ -47,7 +45,7 @@
   <section id="projects" class="main__Div projects displayNone">
     <h3 class="projects">PROJECTS</h3>
       <a class="projects__homesafe" href="#https://homesafefac.herokuapp.com/"><h4>Home Safe</h4></a>
-        <p>An app that streamlines the process of scheduling school pickups</p>
+        <p>An app for busy parents which streamlines scheduling school pickups in a safe and secure manner</p>
         <p class="project__skills">Node.js | Nodemailer | Express | Handlebars | PostgreSQL | Heroku</p>
         <div class="projects__homesafe__images">
           <img class="projects__homesafe__image"src="./assets/images/userSelect.png" alt="select user page">
@@ -62,6 +60,8 @@
 
   <section id="skills" class="skills">
     <h3 class="skills__header">SKILLS</h3>
+    <p>Technical skills that I've developed through group and independent projects</p>
+    <a href="./assets/images/sophiecv.pdf" class="skills__cv">My CV (PDF)</a>
     <table class="skills__table">
       <tr>
         <th>Languages</th>
@@ -96,16 +96,16 @@
         <td>Agile</td>
       </tr>
       <tr>
+        <td>Elm</td>
         <td>Redux</td>
-        <td></td>
         <td></td>
         <td>Istanbul</td>
         <td></td>
         <td>User Testing</td>
       </tr>
       <tr>
-        <td>Handlebars</td>
         <td></td>
+        <td>Handlebars</td>
         <td></td>
         <td>Supertest</td>
         <td></td>
@@ -117,15 +117,47 @@
 
 
     <section id="contact" class="contact">
-      <form id="googleForm" class="" action="https://script.google.com/macros/s/AKfycbzN2j1EYOPsTUO-DDroGhUNP0KDuW24DnpVOZ2R8p8tbRNSh7g/exec" method="POST">
-      <input class="googleForm__input"type="text" name="Name" value="Name">
-      <input class="googleForm__input"type="text" name="Email" value="Email">
-      <input class="googleForm__input"type="text" name="Message" value="Message">
-      <input type="submit" name="" value="Submit">
-      </form>
+<form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="example@email.net"
+  action="https://script.google.com/macros/s/AKfycbzN2j1EYOPsTUO-DDroGhUNP0KDuW24DnpVOZ2R8p8tbRNSh7g/exec">
+    <!-- change the form action to your script url -->
+
+    <fieldset class="googleForm__input">
+      <label for="name">Name</label>
+      <input id="name" name="name" />
+    </fieldset>
+
+    <fieldset class="googleForm__input">
+      <label for="email">Your Email Address</label>
+      <input id="email" name="email" type="email" value=""/>
+      <span id="email-invalid" style="display:none">
+        Must be a valid email address!</span>
+    </fieldset>
+
+    <fieldset class="googleForm__input">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5"></textarea>
+    </fieldset>
+
+
+
+    <button class="button-success pure-button button-xlarge">
+      <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+
+  </form>
+
+  <!-- Customise the Thankyou Message People See when they submit the form: -->
+  <div style="display:none;" id="thankyou_message">
+    <h2>Thanks for contacting me!
+      I will get back to you soon!</h2>
+  </div>
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" type="text/javascript"
+  src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+  <!-- <script data-cfasync="false" type="text/javascript"
+  src="/form-submission-handler.js"></script> -->
     </section>
     <script src="./index.js" type="text/javascript">
-
-    </script>
+</script>
   </body>
 </html>
