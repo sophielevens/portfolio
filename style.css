@@ -3,39 +3,40 @@
 body {
   font-family: "Didact Gothic", sans-serif;
   font-weight: 400;
-  font-size: 1rem;
-  color: #324B4D;
+  font-size: 1.2rem;
+  color: #324b4d;
   text-align: center;
   margin: 0;
   padding: 0;
-  line-height: 1.3rem;
+  line-height: 2rem;
   display: inline-block; }
 
 h2 {
-  color: white;
+  color: #4bc0c8;
   font-weight: 500; }
 
 h3 {
-  color: #FEAC5E;
-  font-size: 1rem;
+  color: #feac5e;
+  font-size: 1.2rem;
   font-weight: 400; }
 
 p {
   font-weight: 400;
-  font-size: 0.8rem; }
+  font-size: 1.1rem; }
 
 a {
   text-decoration: none;
   color: white; }
 
 .fa {
-  color: #005C73;
+  color: #005c73;
   font-size: 2rem; }
 
 .fa:hover {
-  color: #4BC0C8; }
+  color: #4bc0c8; }
 
-ul, li {
+ul,
+li {
   list-style-type: none;
   padding-left: 0;
   display: flex;
@@ -63,8 +64,8 @@ ul, li {
 .banner {
   width: 100vw;
   height: 100vh;
-  background: -webkit-linear-gradient(to left, #FEAC5E, #C779D0, #4BC0C8);
-  background: linear-gradient(to left, #FEAC5E, #C779D0, #4BC0C8);
+  background: -webkit-linear-gradient(to left, #feac5e, #c779d0, #4bc0c8);
+  background: linear-gradient(to left, #feac5e, #c779d0, #4bc0c8);
   background-size: 200% auto;
   color: white;
   display: flex;
@@ -75,7 +76,7 @@ ul, li {
 .banner-text {
   text-align: center;
   border: 0.1rem solid;
-  border-color: linear-gradient(to left, #FEAC5E, #C779D0, #4BC0C8);
+  border-color: linear-gradient(to left, #feac5e, #c779d0, #4bc0c8);
   padding: 3rem; }
 
 .banner:hover {
@@ -112,34 +113,46 @@ ul, li {
   to {
     transform: translate3d(0, 0, 0); } }
 .about {
-  padding: 2rem;
-  display: inline-flex;
+  padding-top: 2rem;
+  display: flex;
   flex-direction: column;
-  width: 80%; }
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+  .about .about__text {
+    width: 70%; }
 
 .social * {
   display: inline-flex;
   justify-content: center;
   margin: 1rem; }
 
-.skills__table {
-  margin: auto; }
+.skills {
+  background-color: #4bc0c8;
+  padding: 2rem; }
+  .skills .skills__header {
+    color: white; }
+  .skills .skills__table {
+    margin: auto;
+    background-color: white; }
 
 table {
-  width: 75%;
+  width: 80%;
   border-spacing: 0;
-  border: 0.1rem solid #4BC0C8; }
+  border: 0.1rem solid #4bc0c8; }
 
 th,
 td {
   padding: 0.8rem;
   text-align: center; }
 
-/* projects */
-.projects__homesafe {
-  color: #FEAC5E; }
+.projects__image {
+  width: 15rem; }
 
-.projects__homesafe__image {
-  width: 12rem; }
+.cv__button {
+  color: #4bc0c8;
+  padding: 0.6rem;
+  border: 1px solid #4bc0c8;
+  border-radius: 12px; }
 
 /*# sourceMappingURL=style.css.map */
