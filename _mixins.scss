@@ -45,17 +45,17 @@
 }
 
 @mixin h2 {
-  color: white;
+  color: $txt-header;
   font-weight: $medium;
 }
 
 @mixin h3 {
-  color: $txt-header;
-  font-size: 1rem;
+  color: $txt-sml-header;
+  font-size: 1.2rem;
   font-weight: $regular;
 }
 
 @mixin p {
   font-weight: $regular;
-  font-size: 0.8rem;
+  font-size: 1.1rem;
 }
