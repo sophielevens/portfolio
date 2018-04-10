@@ -38,10 +38,11 @@
   }
 }
 
-@mixin hover {
+@mixin navbarHover {
   font-weight: $medium;
   text-decoration: underline;
   cursor: auto;
+  font-size: 2rem;
 }
 
 @mixin h2 {
