@@ -3,7 +3,6 @@
 body {
   font-family: "Didact Gothic", sans-serif;
   font-weight: 400;
-  font-size: 1.2rem;
   color: #324b4d;
   text-align: center;
   margin: 0;
@@ -48,7 +47,8 @@ li {
   position: absolute;
   align-items: center;
   justify-content: center;
-  height: 100vh; }
+  height: 100vh;
+  width: 10rem; }
   .navbar .navbar-ul {
     list-style: none;
     flex-direction: column;
@@ -59,7 +59,8 @@ li {
     .navbar .navbar-item:hover {
       font-weight: 500;
       text-decoration: underline;
-      cursor: auto; }
+      cursor: auto;
+      font-size: 2rem; }
 
 .banner {
   width: 100vw;
@@ -127,9 +128,22 @@ li {
   justify-content: center;
   margin: 1rem; }
 
+.animate__projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; }
+  .animate__projects .animate__AKT {
+    width: 5rem; }
+  .animate__projects .animate__homesafe {
+    width: 5rem; }
+  .animate__projects .animate__StimmyThings {
+    width: 5rem; }
+
 .skills {
   background-color: #4bc0c8;
-  padding: 2rem; }
+  padding: 2rem;
+  opacity: 0.9; }
   .skills .skills__header {
     color: white; }
   .skills .skills__table {
@@ -137,17 +151,21 @@ li {
     background-color: white; }
 
 table {
-  width: 80%;
+  width: 85%;
   border-spacing: 0;
-  border: 0.1rem solid #4bc0c8; }
+  border: 0.1rem solid #4bc0c8;
+  font-size: 500; }
 
 th,
 td {
   padding: 0.8rem;
   text-align: center; }
 
+.projects__div {
+  border-bottom: 1px solid black; }
+
 .projects__image {
-  width: 15rem; }
+  width: 20rem; }
 
 .cv__button {
   color: #4bc0c8;

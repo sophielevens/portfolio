@@ -6,7 +6,6 @@
 body {
   font-family: $didact-gothic;
   font-weight: $regular;
-  font-size: 1.2rem;
   color: $txt-primary;
   text-align: center;
   margin: 0;
@@ -55,6 +54,7 @@ li {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  width: 10rem;
 
   .navbar-ul {
     list-style: none;
@@ -66,7 +66,7 @@ li {
     padding: 2rem;
     color: white;
     &:hover {
-      @include hover;
+      @include navbarHover;
     }
   }
 }
@@ -120,6 +120,7 @@ li {
   justify-content: center;
   align-items: center;
   width: 100%;
+
   .about__text {
     width: 70%;
   }
@@ -131,23 +132,43 @@ li {
   margin: 1rem;
 }
 
+.animate__projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+  .animate__AKT {
+    width: 5rem;
+  }
+
+  .animate__homesafe {
+    width: 5rem;
+  }
+
+  .animate__StimmyThings {
+    width: 5rem;
+  }
+}
+
 .skills {
   background-color: #4bc0c8;
   padding: 2rem;
+  opacity: 0.9;
   .skills__header {
     color: white;
   }
   .skills__table {
     margin: auto;
-
     background-color: white;
   }
 }
 
 table {
-  width: 80%;
+  width: 85%;
   border-spacing: 0;
   border: 0.1rem solid #4bc0c8;
+  font-size: $medium;
 }
 
 th,
@@ -156,8 +177,12 @@ td {
   text-align: center;
 }
 
+.projects__div {
+  border-bottom: 1px solid black;
+}
+
 .projects__image {
-  width: 15rem;
+  width: 20rem;
 }
 
 .cv__button {
