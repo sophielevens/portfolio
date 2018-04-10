@@ -1,7 +1,7 @@
-@import 'variables';
-@import 'mixins';
-@import url('https://fonts.googleapis.com/css?family=Work+Sans');
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import "variables";
+@import "mixins";
+@import url("https://fonts.googleapis.com/css?family=Work+Sans");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 
 body {
   font-family: $didact-gothic;
@@ -94,7 +94,7 @@ li {
 }
 
 .banner:hover {
-  background-position: right center; /* change the direction of the change here */
+  background-position: right center;
 }
 
 .banner-animation {
@@ -130,25 +130,53 @@ li {
   display: inline-flex;
   justify-content: center;
   margin: 1rem;
+  font-size: 1.5rem;
 }
 
 .animate__projects {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: row;
+  margin: 2rem 0 2rem 0;
+}
 
-  .animate__AKT {
-    width: 5rem;
-  }
+.container {
+  position: relative;
 
-  .animate__homesafe {
-    width: 5rem;
-  }
+}
+.container:hover .overlay {
+  opacity: 1;
+}
 
-  .animate__StimmyThings {
-    width: 5rem;
-  }
+.projects__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #c779d0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+// text
+.project__text {
+  color: white;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 .skills {
@@ -181,13 +209,10 @@ td {
   border-bottom: 1px solid black;
 }
 
-.projects__image {
-  width: 20rem;
-}
-
 .cv__button {
   color: #4bc0c8;
   padding: 0.6rem;
   border: 1px solid #4bc0c8;
   border-radius: 12px;
+  margin: 1rem;
 }
