@@ -142,7 +142,7 @@ li {
 
 .container {
   position: relative;
-
+  margin: 1rem;
 }
 .container:hover .overlay {
   opacity: 1;
@@ -152,6 +152,10 @@ li {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.project__info {
+  margin: 0.8rem;
 }
 
 .overlay {
