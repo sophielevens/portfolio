@@ -60,7 +60,8 @@ li {
       font-weight: 500;
       text-decoration: underline;
       cursor: auto;
-      font-size: 2rem; }
+      font-size: 1.5rem;
+      transition-timing-function: ease; }
 
 .banner {
   width: 100vw;
@@ -81,8 +82,7 @@ li {
   padding: 3rem; }
 
 .banner:hover {
-  background-position: right center;
-  /* change the direction of the change here */ }
+  background-position: right center; }
 
 .banner-animation {
   animation-duration: 1.2s;
@@ -126,19 +126,56 @@ li {
 .social * {
   display: inline-flex;
   justify-content: center;
-  margin: 1rem; }
+  margin: 1rem;
+  font-size: 1.5rem; }
 
 .animate__projects {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: row; }
-  .animate__projects .animate__AKT {
-    width: 5rem; }
-  .animate__projects .animate__homesafe {
-    width: 5rem; }
-  .animate__projects .animate__StimmyThings {
-    width: 5rem; }
+
+.container {
+  position: relative; }
+
+.container:hover .overlay {
+  opacity: 1; }
+
+.projects__image {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.7s ease;
+  background-color: #c779d0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.project__text {
+  color: white;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width: 80%; }
+
+.project__header {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold; }
+
+.project__link {
+  text-decoration: underline;
+  line-height: 1.1rem; }
 
 .skills {
   background-color: #4bc0c8;
@@ -161,16 +198,11 @@ td {
   padding: 0.8rem;
   text-align: center; }
 
-.projects__div {
-  border-bottom: 1px solid black; }
-
-.projects__image {
-  width: 20rem; }
-
 .cv__button {
   color: #4bc0c8;
   padding: 0.6rem;
   border: 1px solid #4bc0c8;
-  border-radius: 12px; }
+  border-radius: 12px;
+  margin: 1rem; }
 
 /*# sourceMappingURL=style.css.map */
